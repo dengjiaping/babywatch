@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义提示框 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true"  
+    android:orientation="vertical"  
+    android:padding="20.0dip" >  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"  
+        android:background="#FF4F03"  
+        android:orientation="vertical" >  
+  
+        <TextView  
+            android:id="@+id/title"  
+            style="@style/text_18_ffffff"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"  
+            android:layout_marginBottom="@dimen/dimen_10dp"  
+            android:gravity="center"
+            android:text="@string/dialog_body_text"  
+            android:visibility="visible" /> 
+         <TextView   
+            android:layout_width="fill_parent"  
+            android:layout_height="1px"  
+            android:gravity="center"  
+            android:background="#ffffff"
+            android:visibility="visible" />   
+  
+        <LinearLayout  
+            android:id="@+id/content"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:background="#FFF"
+            android:gravity="center"
+            android:orientation="horizontal" >  
+  			
+            <View 
+                android:layout_width="@dimen/dimen_5dp"
+                android:layout_height="match_parent"
+                android:background="#FF4F03"/>
+  
+            <TextView  
+                android:id="@+id/message"  
+                style="@style/text_16_666666"  
+                android:layout_width="0dp"  
+                android:layout_weight="1"
+                android:layout_height="wrap_content"  
+                android:gravity="left|center"  
+                android:lineSpacingMultiplier="1.5"  
+                android:minHeight="120.0dip"  
+                android:paddingBottom="15.0dip"  
+                android:paddingLeft="20.0dip"  
+                android:paddingRight="20.0dip"  
+                android:paddingTop="15.0dip"
+                android:background="#FF4F03" />  
+                
+            <View 
+                android:layout_width="@dimen/dimen_5dp"
+                android:layout_height="match_parent"
+                android:background="#FF4F03"/>
+  
+            </LinearLayout>  
+  
+        <View  
+            android:layout_width="fill_parent"  
+            android:layout_height="1.0px"  
+            android:background="#ffd0d0d0" />  
+  
+        <LinearLayout  
+            android:layout_width="fill_parent"  
+            android:layout_height="60.0dip"  
+            android:layout_gravity="bottom"
+            android:background="#FF4F03"  
+            android:gravity="center"  
+            android:orientation="horizontal" >  
+            <!-- style="@style/text_15_ffffff_sdw" -->
+            <Button  
+                android:id="@+id/positiveButton"  
+                style="@style/text_15_666666_sdw" 
+                android:layout_width="114.0dip"  
+                android:layout_height="40.0dip"  
+                android:background="#E5E5E5"  
+                android:gravity="center"  
+                android:text="@string/compele" />  
+  
+            <Button  
+                android:id="@+id/negativeButton"  
+                style="@style/text_15_666666_sdw"  
+                android:layout_width="114.0dip"  
+                android:layout_height="40.0dip"  
+                android:layout_marginLeft="20.0dip"  
+                android:background="#E5E5E5"  
+                android:gravity="center"  
+                android:text="@string/cancel" />  
+        </LinearLayout>  
+    </LinearLayout>  
+  
+</FrameLayout>  

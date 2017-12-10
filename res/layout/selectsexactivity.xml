@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 安全区域范围选择弹出框 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+	<!-- 性别选择  -->
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF4F03"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+<!--         男 -->
+        <TextView
+            android:id="@+id/txt_man"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:text="@string/selectsex_man"
+            android:textColor="#F3F3F3"
+            android:textSize="@dimen/dimen_16sp" />
+        
+           <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="10dip"
+            android:background="#F3F3F3"
+            />
+<!--            女 -->
+        <TextView
+            android:id="@+id/text_woman"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:background="#FF4F03"
+            android:gravity="center"
+            android:text="@string/selectsex_woman"
+            android:textColor="#F3F3F3"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

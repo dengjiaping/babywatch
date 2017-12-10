@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".LoginActivity" 
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:id="@+id/login_mainlLayout"
+   android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/buju1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="vertical" >
+
+        <!-- logo图片 -->
+
+        <ImageView
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_120dp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:src="@drawable/qidong_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/app_describe"
+            android:textColor="#99ffffff"
+            android:textSize="@dimen/dimen_15dp" 
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buju1"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="vertical" >
+
+        <!-- 手机号码和密码的编辑框 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@drawable/qidong_shurukuang"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10dp" >
+
+            <!-- 手机号码编辑框 -->
+
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:background="#212829"
+                android:gravity="center_vertical"
+                android:hint="@string/phonenum"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="#ffffff" 
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <!-- 密码编辑框 -->
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:background="#212829"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="true" 
+                android:textColor="#ffffff" 
+                android:textCursorDrawable="@drawable/color_cursor"/>
+        </LinearLayout>
+
+        <!-- 登陆账号图片按钮 -->
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="#2D3036"
+            android:scaleType="centerCrop"
+            android:src="@drawable/denglu_btn_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_20dp" 
+            android:visibility="invisible"/>
+
+        <!-- 微信和QQ登录按钮 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:orientation="horizontal" >
+
+            <ImageView 
+                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/denglu_but_logo"
+                />
+            
+            <!-- 微信登录按钮 -->
+
+            <ImageButton
+                android:id="@+id/btnWeiXin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_weight="1"
+                android:background="#2D3036"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weixin_btn_bg" 
+                android:visibility="gone"/>
+
+            <!-- QQ登录按钮 -->
+
+            <ImageButton
+                android:id="@+id/btnQQ"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_weight="1"
+                android:background="#2D3036"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qq_btn_bg"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <!-- 忘记密码文本框 -->
+
+        <TextView
+            android:id="@+id/textForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:text="@string/forger_password"
+            android:textColor="#ffffff" />
+
+        <!-- 注册账号文本框 -->
+
+        <TextView
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:id="@+id/RegisteredAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/register"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

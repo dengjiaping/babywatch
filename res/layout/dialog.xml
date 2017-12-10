@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:padding="10dip"
+        android:text="@string/dialog_title"
+        android:textColor="#FF4F03"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <!-- android:textColor="#ff3cac17" -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#ff3cac17" />
+
+    <TextView
+        android:id="@+id/tv_dialog_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:lineSpacingExtra="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/dialog_body_text"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#ff737373" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="1dip"
+            android:layout_weight="1"
+            android:background="@drawable/smssdk_dialog_btn_back"
+            android:padding="10dip"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ff737373" />
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_marginRight="1dip"
+            android:layout_weight="1"
+            android:text="@string/dialog_close"
+            android:background="@drawable/smssdk_dialog_btn_back"
+            android:padding="10dip"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

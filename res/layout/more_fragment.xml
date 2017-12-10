@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/moreset"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+    </RelativeLayout>
+
+    <!-- 中间 上 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/buju2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_240dp"
+            android:layout_below="@id/buju1"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <!-- 家庭成员 -->
+
+            <TextView
+                android:id="@+id/family_member"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/familymember"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <!-- 手机和宝贝管理 -->
+
+            <TextView
+                android:id="@+id/watch_manager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/phoneandbabymanger"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <!-- 白名单管理 -->
+
+            <TextView
+                android:id="@+id/whitephone_manager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/whitephonemanger"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <!-- 省电设置 -->
+
+            <TextView
+                android:id="@+id/poweraving_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/saveset"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <!-- 设置手机静音 -->
+
+            <TextView
+                android:id="@+id/Layout_SetWatchMute"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/setslience"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+            <!-- 中间下 -->
+
+            <TextView
+                android:id="@+id/InformationCenter "
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/messagecenter"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <TextView
+                android:id="@+id/textSOSHelpNote"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/sos"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <TextView
+                android:id="@+id/TextHelpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/help"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <!-- 关于与反馈 -->
+
+            <TextView
+                android:id="@+id/feedback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/jiantou"
+                android:gravity="center_vertical"
+                android:text="@string/other"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <!-- 退出当前账号 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:background="#e4e4e4" />
+
+            <TextView
+                android:id="@+id/escnowuser_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="@string/escnowuser"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

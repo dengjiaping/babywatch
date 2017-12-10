@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LocationFragment选择BaBy中Spinner组件Layout -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:gravity="center_vertical"
+    android:textColor="#FFF2EC"
+    android:singleLine="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dip"
+    />

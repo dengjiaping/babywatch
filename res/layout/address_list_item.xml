@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3" >
+
+    <LinearLayout
+        android:id="@+id/rel_left"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="@drawable/time_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp" >
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:layout_marginTop="-5dp" >
+
+            <TextView
+                android:id="@+id/text_am_or_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="am"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="top"
+                android:textSize="@dimen/dimen_17dp" />
+        </LinearLayout>
+
+        <!-- 该TextView用于位置参照 -->
+        <!--
+             <TextView 
+            android:id="@+id/text_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="0sp"
+            />
+
+        -->
+        <!--
+         <TextView
+        android:id="@+id/text_time"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_above="@id/text_center"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_11dp"
+        android:text="9:00"
+        android:textSize="@dimen/dimen_17dp"
+        android:textColor="#FFFFFF"
+         />
+    <TextView
+        android:id="@+id/text_am_or_pm"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_below="@id/text_center"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:text="am"
+        android:textSize="@dimen/dimen_17dp"
+        android:textColor="#FFFFFF"
+         />
+        -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/rel_left"
+        android:background="@drawable/address_background" >
+
+        <LinearLayout
+            android:id="@+id/lin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_30dp" >
+
+            <TextView
+                android:id="@+id/text_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="#FF4F03"
+                android:textSize="@dimen/dimen_16dp" />
+            
+            <RelativeLayout
+                android:id="@+id/rel_staytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" 
+                >
+
+                <TextView
+                    android:id="@+id/hit_staytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stay"
+                    android:textColor="#FF4F03"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <TextView
+                    android:id="@+id/text_staytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF4F03"
+                    android:layout_toRightOf="@id/hit_staytime"      
+                    android:textSize="@dimen/dimen_15dp" />
+            </RelativeLayout> 
+
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_14dp"
+            android:layout_below="@id/lin_top" >
+            <TextView
+                android:id="@+id/text_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:textColor="#C4C4C4"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:id="@+id/text_detial_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:textColor="#C4C4C4"
+                android:lines="3"
+                android:textSize="@dimen/dimen_16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

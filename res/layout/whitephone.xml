@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+    
+    <!-- 顶部标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <RelativeLayout
+            android:id="@+id/layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:background="#FF4F03" >
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/whitephonemanger"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_17dp" />
+        
+                <RelativeLayout
+            android:id="@+id/layout_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10dp" >
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addwhitephone"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    <!-- 白名单列表 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+    <ListView
+            android:id="@+id/white_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:background="#ffffff"
+            android:divider="#e3e3e3"
+            android:dividerHeight="@dimen/dimen_1sp" />
+    </LinearLayout>
+    
+
+</LinearLayout>

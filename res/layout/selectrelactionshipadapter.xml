@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 安全区域范围选择弹出框 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_relacationship"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#F3F3F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/liner_relactionship"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF4F03"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/txt_relacationship"
+        android:layout_width="@dimen/dimen_290dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:text="aaaa"
+        android:gravity="center"
+        android:textColor="#F3F3F3"
+        android:textSize="@dimen/dimen_16sp" />
+   </LinearLayout>
+</LinearLayout>

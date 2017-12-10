@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mb.zjwb1"
+    android:versionCode="20"
+    android:versionName="1.9.4.2" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+    <!-- 高德地图权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 注册QQ和微信登陆的权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 短信验证权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 二维码扫描 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 伍建鹏，聊天界面 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 云测分析 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 友盟统计 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <!-- 云巴推送 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 位置相关权限，不是必须添加 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 是dialog能在service显示的权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	
+    <!-- 在SDCard中创建与删除文件权限 -->  
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <!-- 往SDCard写入数据权限 -->  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+    
+    
+    <application
+        android:name="com.mobao.watch.activity.MbApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/qidong_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+
+        <!--
+        高德地图key 
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d0683596d996cc6d06710f09b1089ca7" />
+        测试
+        -->
+        <!-- 高德地图key 发布 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b411bdb223a74029f5fddd61327fd170" />
+
+        <activity
+            android:name="com.mobao.watch.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.AboutUsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.BasicMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.ActiveWatchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.AddBabyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.AddBabyActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.LogInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.VerifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.FamilyMemberActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.WatchMangerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.BabyFragmentActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.LocationHistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.MoreFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.SafetyAreaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.AlertSafetyAreaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.PowerSaveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.AddSafetyAreaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.SelectSafetyRangePopupWindowActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.SelectGetPhotoMethodActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.SelectRelactionShipActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.Mutetime_ManageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.Mutetime_Data_SetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.Mutetime_Data_Set_WeekeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.chatfragmentSelectCallWayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+
+        <!-- QQ和微信登陆分享界面 -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1104330957" /> <!-- appid在这里修改 -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.smssdk.SMSSDKUIShell"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.mobao.watch.activity.RewardFragmentActivity" >
+        </activity>
+        <!-- sos求救记录界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.SosRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 静态注册DialogCountDownReceiver广播 -->
+        <receiver android:name="com.mobao.watch.broadcastReceiver.DialogCountDownReceiver" >
+            <intent-filter>
+                <action android:name="startCountDown" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 静态注册ChatTimingRefresh广播 -->
+        <receiver android:name="com.mobao.watch.broadcastReceiver.ChatTimingRefresh" >
+            <intent-filter>
+                <action android:name="refresh" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 伍建鹏   聊天service -->
+        <service android:name="com.mobao.watch.service.ChatfragmentService" >
+        </service>
+
+        <!-- InformationCenter消息中心界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.InformationCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 帮助界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.HelpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 白名单管理界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.WhiteohoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 腕表管理界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.PhoneNumberManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 详细地址地图界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.BasicMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 云测 -->
+        <!-- 设置AppKey -->
+        <meta-data
+            android:name="TESTIN_APPKEY"
+            android:value="0187d4e7b8c0a3a4f262f27caa3f3eda" />
+        <!-- 设置渠道信息 -->
+        <meta-data
+            android:name="TESTIN_CHANNEL"
+            android:value="ertongwanbiao" />
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="551be5a2fd98c5b3ee0012f9" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ertongwanbiao" />
+        <!-- 性别选择界面 -->
+        <activity
+            android:name="com.mobao.watch.activity.SelectSetSexActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.mobao.watch.activity.GoogleLocationLogActivity"
+            android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+
+        <!-- 云巴Appkey -->
+        <meta-data
+            android:name="YUNBA_APPKEY"
+            android:value="552a567f7e353f5814e10d5d" />
+
+        <!-- 云巴服务 -->
+        <service android:name="io.yunba.android.core.YunBaService" >
+        </service>
+
+        <!-- 添加 YunBaReceiver, 用来监听网络变化等事件，确保网络切换时能重新建立长连接. -->
+        <receiver android:name="io.yunba.android.core.YunBaReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 自定义 Receiver 接受 Publish 消息 -->
+        <receiver android:name="com.mobao.watch.receiver.YunBaReceiver" >
+            <intent-filter>
+                <action android:name="io.yunba.android.MESSAGE_RECEIVED_ACTION" />
+
+                <category android:name="com.mb.zjwb1" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 聊天service -->
+        <service android:name="com.mobao.watch.service.ChatNewMsgService" >
+        </service>
+
+        <!-- 手表号码管理界面 -->
+        <activity android:name="com.mobao.watch.activity.PhoneNumberManagerActivity" >
+        </activity>
+        
+        <activity android:name="com.mobao.watch.activity.BasicMapActivity" >
+        </activity>
+    </application>
+
+</manifest>

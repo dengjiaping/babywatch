@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LocationFragment选择BaBy中Spinner组件Layout -->
+    <TextView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="item_spinner"
+        android:textSize="@dimen/dimen_20dp"
+        android:textColor="#FFFFFF"
+        android:background="#FF4F03"
+        android:gravity="center"
+        />

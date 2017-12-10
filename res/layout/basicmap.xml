@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+        android:id="@+id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+        
+        <RelativeLayout
+            android:id="@+id/rel_backtoloaction"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FF4F03" >
+
+            <ImageButton
+                android:id="@+id/btn_backtoloaction"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:clickable="false"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="位置记录"
+                android:textColor="#E8E8E8"
+                android:textSize="@dimen/dimen_20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_below="@id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

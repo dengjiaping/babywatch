@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_gravity="center"
+        android:background="#FF4F03"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/addnowwhitephone"
+        android:textColor="#f3f3f3"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold" />
+    <!-- android:textColor="#ff3cac17" -->
+
+    <View
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="#F3F3F3" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content"
+        android:background="#FF4F03"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="match_parent"
+            android:background="#FF4F03" />
+        
+        <LinearLayout
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+             android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/dialog_et_whitephone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:hint="@string/editnowwhitephone"
+            android:inputType="number"
+            android:lineSpacingExtra="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_18sp" 
+           />
+        
+        <TextView 
+             android:id="@+id/dialog_text_del"
+              android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_18sp"
+            android:visibility="gone"   
+            
+            />
+        
+        
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="match_parent"
+            android:background="#FF4F03" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="#F3F3F3" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content" 
+        android:background="#F3F3F3"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_dialog_sure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginRight="@dimen/dimen_1dp"
+            android:layout_weight="1"
+            android:background="#FF4F03"
+            android:text="@string/sure"
+            android:textColor="#f3f3f3" 
+            android:visibility="gone"
+         />
+
+        <Button
+            android:id="@+id/btn_dialog_add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_weight="1"
+            android:background="#FF4F03"
+            android:text="@string/addwhitephone"
+            android:textColor="#f3f3f3" 
+             />
+           <Button
+            android:id="@+id/btn_dialogcancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginLeft="@dimen/dimen_1dp"
+            android:layout_weight="1"
+            android:background="#FF4F03"
+            android:text="@string/cancel"
+            android:textColor="#f3f3f3" 
+            android:visibility="gone"
+           />
+    </LinearLayout>
+
+</LinearLayout>

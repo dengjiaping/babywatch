@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <RelativeLayout
+            android:id="@+id/rel_back"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FF4F03" >
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:clickable="false"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/editcode"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <TextView
+            android:id="@+id/textNext"
+            android:layout_width="@dimen/dimen_70dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:text="@string/messagesend"
+            android:textColor="#999999" />
+
+        <!-- 手机号码 -->
+
+        <TextView
+            android:id="@+id/textPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_weight="1"
+            android:background="#F3F3F3"
+            android:gravity="center"
+            android:numeric="integer"
+            android:text="13418138634"
+            android:textColor="#FB906C" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dimen_20dp"
+            android:src="@drawable/verify" />
+
+        <!-- 验证码编辑框 -->
+
+        <EditText
+            android:id="@+id/edtVertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/please_input_Verifition"
+            android:inputType="number"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnResendVertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:background="#F3F3F3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/resend_verify_btn_bg" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dimen_70dp"
+    android:background="#F3F3F3" >
+
+    <RelativeLayout 
+        android:id="@+id/list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:id="@+id/rel_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_centerVertical="true"
+        android:background="#F3F3F3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_7dp"
+            android:layout_marginRight="@dimen/dimen_7dp"
+            android:layout_marginTop="@dimen/dimen_7dp"
+            android:background="@drawable/safety_area_list_bg" >
+        </RelativeLayout>
+
+        <!-- 该TextView用于位置参照 -->
+
+        <TextView
+            android:id="@+id/text_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="0sp" />
+
+        <TextView
+            android:id="@+id/text_safety_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/text_center"
+            android:layout_toRightOf="@id/image"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:text="@string/home"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/dimen_22dp" />
+
+        <TextView
+            android:id="@+id/text_safety_address"
+            android:layout_width="@dimen/dimen_320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_center"
+            android:layout_toRightOf="@id/image"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:textColor="#E7E7E7"
+            android:textSize="@dimen/dimen_14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/rel_btn_arrows"
+        android:layout_width="@dimen/dimen_25dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_marginRight="@dimen/dimen_7dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+    <ImageButton
+        android:id="@+id/btn_arrows"
+        android:layout_width="@dimen/dimen_22dp"
+        android:layout_height="@dimen/dimen_22dp"
+        android:src="@drawable/arrows"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

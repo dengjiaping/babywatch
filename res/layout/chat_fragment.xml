@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+        <!-- 返回定位按钮 -->
+         <RelativeLayout
+            android:id="@+id/rel_btn_backlocation"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentLeft="true" 
+            android:layout_marginLeft="@dimen/dimen_5dp">
+            <ImageButton
+                android:id="@+id/but_backlocation"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:background="#FF4F03"
+                android:src="@drawable/back" />
+
+        </RelativeLayout>
+<!-- 监听按钮 -->
+        <RelativeLayout
+            android:id="@+id/rel_btn_call"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="#FF4F03" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btn_call"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:scaleType="centerCrop"
+                android:src="@drawable/listen_state" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_select_baby"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/text_select_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#E8E8E8"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <!--
+             <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text_select_baby"
+            android:src="@drawable/drop_down" />
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_btn_map"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentRight="true"
+            android:background="#FF4F03" 
+            android:layout_marginRight="@dimen/dimen_5dp">
+
+            <ImageView
+                android:id="@+id/but_map"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_centerVertical="true"
+                android:background="#FF4F03"
+                android:scaleType="centerCrop"
+                android:src="@drawable/refresh" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_center"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" >
+    </RelativeLayout>
+
+    <!-- 伍建鹏编写 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3" >
+
+        <!-- 底部 -->
+
+        <LinearLayout
+            android:id="@+id/chatfragment_ll_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chatfragment_oclick_to_say" />
+
+            <TextView
+                android:id="@+id/chatfragment_tv_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="@string/taking"
+                android:textColor="#FF4F03"
+                android:textSize="@dimen/dimen_25sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_alignBottom="@id/chatfragment_ll_bottom"
+            android:background="#E4E4E4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_alignTop="@id/chatfragment_ll_bottom"
+            android:background="#DADADA" />
+
+        <!-- 中间聊天内容 -->
+
+        <ListView
+            android:id="@+id/chatfragment_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/chatfragment_ll_bottom"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="@dimen/dimen_5dp"
+            android:scrollbars="none" />
+
+        <!-- 隐藏的内容，但录音时弹出 -->
+
+        <RelativeLayout
+            android:id="@+id/chatfragment_rl_record_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:background="#66000000"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/chatfragment_iv_record_rotate_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chatfragment_recording_dialog_rotate_round" />
+
+            <ImageView
+                android:id="@+id/chatfragment_iv_record_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chatfragment_recoding_dialog_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

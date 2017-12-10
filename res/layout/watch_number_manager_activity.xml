@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg" 
+    android:orientation="vertical">
+    
+             <!-- 顶部栏 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:background="@color/main_color">
+
+                <ImageView
+                    android:id="@+id/iv_watch_number_manager_back"
+                    android:layout_width="@dimen/dimen_35dp"
+                    android:layout_height="@dimen/dimen_35dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:src="@drawable/back"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/watch_number_manage"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dimen_19sp" />
+            </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+          
+        <!-- 手表速拨号码 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@color/main_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:text="@string/watch_quickly_number"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_19sp" />
+
+            <TextView
+                android:id="@+id/text_watch_quick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/dimen_19sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/main_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_22dp"
+            android:layout_marginRight="@dimen/dimen_22dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/watch_spell_dialer_number_tip" />
+
+        <!-- 腕表白名单 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@color/main_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/tv_watch_number_manager_write_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:text="@string/watch_write_number"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_19sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_watch_number_manager_write_name"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/main_color"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_watch_number_manager_write_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dimen_19sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/main_line" />
+
+        <ListView
+            android:id="@+id/lv_watch_number_manager_write_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/main_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_22dp"
+            android:layout_marginRight="@dimen/dimen_22dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/write_name_tip" />
+
+        <!-- sos电话 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@color/main_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/tv_watch_number_manager_write_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:text="@string/sos_number"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_19sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/main_line" />
+
+ <ListView
+            android:id="@+id/lv_watch_number_manager_SOS_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/main_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_22dp"
+            android:layout_marginRight="@dimen/dimen_22dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/sos_number_tip" />
+    </LinearLayout>
+
+</ScrollView>
+  </LinearLayout>

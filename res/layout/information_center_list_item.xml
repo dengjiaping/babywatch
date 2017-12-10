@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3" >
+
+
+    <LinearLayout
+        android:id="@+id/rel_left"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="4dp"
+            android:background="#b2b2b2"
+            android:contentDescription="竖线" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="@drawable/time_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/info_text_time"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="12:57"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_13sp" />
+
+            <TextView
+                android:id="@+id/info_text_am_or_pm"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="am"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="#b2b2b2"
+            android:contentDescription="竖线" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/rel_left"
+        android:background="@drawable/address_background" >
+
+        <TextView
+            android:id="@+id/info_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/info_text_address"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:text="2015-03-29"
+            android:textColor="#b2b2b2"
+            android:textSize="@dimen/dimen_10sp" />
+
+        <TextView
+            android:id="@+id/info_text_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimen_80dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:layout_toRightOf="@id/info_text_date"
+            android:text="@string/levaed"
+            android:textColor="#b2b2b2"
+            android:textSize="@dimen/dimen_10sp" />
+
+        <TextView
+            android:id="@+id/info_text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_text_date"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:text="广东交通"
+            android:textColor="#C4C4C4"
+            android:textSize="@dimen/dimen_14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

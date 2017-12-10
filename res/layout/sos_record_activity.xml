@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+         android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <RelativeLayout
+            android:id="@+id/rel_backtoloaction"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FF4F03"
+            android:layout_marginLeft="@dimen/dimen_5dp" >
+
+            
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+  <RelativeLayout
+            android:id="@+id/rel_select_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FF4F03" >
+        <TextView
+             android:id="@+id/text_select_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#E8E8E8"
+            android:text="@string/sos"
+            android:textSize="@dimen/dimen_20sp" />
+         <!-- <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_select_baby"
+                android:src="@drawable/drop_down" /> -->
+          </RelativeLayout>
+    </RelativeLayout>
+<!-- 
+    时间下拉框
+
+    <RelativeLayout
+        android:id="@+id/layout_spinnerdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_below="@id/top_rel"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/text_spinnerdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2015-02-23"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_20sp" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text_spinnerdate"
+            android:src="@drawable/motionfragment_spinner_right" />
+        
+    </RelativeLayout> -->
+<RelativeLayout
+    android:id="@+id/rel_center"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.mobao.watch.view.SosRecordListView
+        android:id="@+id/list_sos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_below="@id/top_rel"
+        android:background="#F3F3F3" >
+    </com.mobao.watch.view.SosRecordListView>
+    
+     </RelativeLayout>
+
+</LinearLayout>

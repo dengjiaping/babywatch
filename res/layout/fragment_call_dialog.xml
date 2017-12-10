@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_160dp"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:background="@drawable/chatfragment_sharp_corner" />
+
+    <LinearLayout
+        android:id="@+id/chatfragment_ll_call_dialog_monitor"
+        android:layout_width="@dimen/dimen_160dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="@drawable/chatfragment_call_dialog_top_corners_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:src="@drawable/chatfragment_call_dialog_monitor_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:text="@string/monitor"
+            android:textColor="#F3F3F3"
+            android:textSize="@dimen/dimen_20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_160dp"
+        android:layout_height="@dimen/dimen_2dp"
+        android:background="#FF9568" />
+
+    <LinearLayout
+        android:id="@+id/chatfragment_ll_call_dialog_call"
+        android:layout_width="@dimen/dimen_160dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="@drawable/chatfragment_call_dialog_buttom_corners_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:src="@drawable/chatfragment_call_dialog_call_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:text="@string/callphone"
+            android:textColor="#F3F3F3"
+            android:textSize="@dimen/dimen_20sp" />
+    </LinearLayout>
+
+</LinearLayout>

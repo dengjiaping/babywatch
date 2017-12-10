@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/img_escnowuse1_en" android:state_pressed="true"/>
+ <item android:drawable="@drawable/img_escnowuse2_en" android:state_pressed="false"/>
+</selector>

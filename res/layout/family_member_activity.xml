@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <RelativeLayout
+            android:id="@+id/rel_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:background="#FF4F03" >
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/familymember"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+        
+                <RelativeLayout
+            android:id="@+id/family_rel_btn_map"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentRight="true"
+            android:background="#FF4F03" >
+
+            <ImageView
+                android:id="@+id/family_but_map"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="#FF4F03"
+                android:scaleType="centerCrop"
+                android:src="@drawable/refresh" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/family_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:background="#ffffff"
+            android:divider="#e3e3e3"
+            android:dividerHeight="@dimen/dimen_1sp" />
+    </LinearLayout>
+
+</LinearLayout>

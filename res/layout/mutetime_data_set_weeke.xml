@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <ImageButton
+            android:id="@+id/mute_set_weeke_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#FF4F03"
+            android:src="@drawable/btn_back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/changsametime"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+    </RelativeLayout>
+
+    <!-- 重复选择 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_21dp"
+        android:paddingRight="@dimen/dimen_22dp" >
+
+        <!-- 周一 -->
+
+        <RelativeLayout
+            android:id="@+id/week1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/monday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#d7d7d7" >
+        </LinearLayout>
+
+        <!-- 周二 -->
+
+        <RelativeLayout
+            android:id="@+id/week2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/tuesday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#d7d7d7" >
+        </LinearLayout>
+
+        <!-- 周三 -->
+
+        <RelativeLayout
+            android:id="@+id/week3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/wednesday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#d7d7d7" >
+        </LinearLayout>
+
+        <!-- 周四 -->
+
+        <RelativeLayout
+            android:id="@+id/week4_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/thursday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#d7d7d7" >
+        </LinearLayout>
+
+        <!-- 周五 -->
+
+        <RelativeLayout
+            android:id="@+id/week5_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/friday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#d7d7d7" >
+        </LinearLayout>
+
+        <!-- 周六 -->
+
+        <RelativeLayout
+            android:id="@+id/week6_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/saturday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#d7d7d7" >
+        </LinearLayout>
+
+        <!-- 周日 -->
+
+        <RelativeLayout
+            android:id="@+id/week7_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/sunday"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <CheckBox
+                android:id="@+id/weeke_checkbox_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox_btn_img"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

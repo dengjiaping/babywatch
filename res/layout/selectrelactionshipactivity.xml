@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 安全区域范围选择弹出框 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F3F3F3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_relactionship"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#F3F3F3"
+            android:dividerHeight="@dimen/dimen_1dp" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

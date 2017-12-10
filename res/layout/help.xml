@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#e3e3e3">
+ <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/help"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+          <ImageButton
+                android:id="@+id/btn_Back"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:background="#FF4F03"
+                android:clickable="false"
+                android:src="@drawable/back" />
+
+    </RelativeLayout>
+    
+    <WebView 
+        android:id="@+id/helpwebview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+</LinearLayout>

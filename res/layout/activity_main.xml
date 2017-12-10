@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    tools:context=".LoginActivity" >
+
+    <Button
+        android:id="@+id/btnLoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/loginview" />
+
+    <Button
+        android:id="@+id/btnLogInfoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/registview" />
+
+    <Button
+        android:id="@+id/btnActivationWatchActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/activitycode" />
+
+    <Button
+        android:id="@+id/btnAddBabyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="添加宝贝页面 " />
+
+    <Button
+        android:id="@+id/babyFragmentActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="宝贝信息主界面" />
+
+    <Button
+        android:id="@+id/btnFamilyMemberActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="家庭成员界面(FamilyMemberActivity)"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnWatchMangerActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="手表与宝贝管理界面(WatchMangerActivity)"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnVerifyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="输入验证码页面(VerifyActivity)"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAboutUsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="关于我们页面(AboutUsActivity)"
+        android:visibility="gone" />
+
+    <Button
+        android:visibility="gone" 
+        android:id="@+id/btnAward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="奖励页面(RewardFragmentActivity)" />
+
+</LinearLayout>

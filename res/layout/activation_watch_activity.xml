@@ -1,0 +1,216 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <!-- 相机景象背景 -->
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <!-- 扫描区域 -->
+
+    <com.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 扫描框 -->
+
+    <ImageView
+        android:layout_width="@dimen/dimen_180dp"
+        android:layout_height="@dimen/dimen_180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_90dp"
+        android:src="@drawable/qr_code_scan" />
+
+    <!-- 扫描框下的文字 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_50dp"
+        android:layout_marginRight="@dimen/dimen_50dp"
+        android:layout_marginTop="@dimen/dimen_280dp"
+        android:gravity="center"
+        android:text="@string/scan_activity_tips_text" />
+
+    <!-- 顶部栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="#FF4F03" >
+
+        <RelativeLayout
+            android:id="@+id/rel_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FF4F03" >
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_activate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activitewatch"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <TextView
+            android:id="@+id/textNext"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300dp"
+        android:layout_gravity="bottom"
+        android:background="#F3F3F3"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="#E4E4E4" />
+
+        <!-- 腕表imei -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:text="@string/watch_imei"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/tv_activation_watch_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:text="@string/wait_the_result_of_scan"
+                android:textColor="#C3C3C3"
+                android:textSize="@dimen/dimen_20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="#E4E4E4" />
+
+        <!-- 你和腕表佩戴者的关系 -->
+
+        <RelativeLayout
+            android:id="@+id/rel_select_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:text="@string/relation_between_you_and_the_one_with_watch"
+                android:textColor="#525252"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/textRelationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_35dp"
+                android:text="@string/mother"
+                android:textColor="#C3C3C3"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:src="@drawable/jiantou" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="#E4E4E4" />
+
+        <!-- 点击输入腕表宝贝昵称 -->
+
+        <EditText
+            android:id="@+id/et_activation_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="#ffffff"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:maxLength="12"
+            android:hint="@string/click_to_input_the_nickname_of_baby"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="#E4E4E4" />
+
+        <!-- 点击输入腕表号码 -->
+
+        <EditText
+            android:id="@+id/et_activation_watch_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="#ffffff"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:hint="@string/click_to_input_the_phone_of_baby"
+            android:inputType="phone"
+            android:numeric="integer"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="#E4E4E4" />
+    </LinearLayout>
+
+</FrameLayout>

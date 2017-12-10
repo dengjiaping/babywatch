@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        
+        <RelativeLayout
+            android:id="@+id/rel_back"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FF4F03" >
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/dimen_35dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_centerInParent="true"
+                android:background="#FF4F03"
+                android:clickable="false"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/phoneandbabymanger"
+            android:textColor="#E8E8E8"
+            android:textSize="@dimen/dimen_20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_gotoVerifyActivuty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/saomiao_bg"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/btn_saoMiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/saomiao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:text="@string/addnewwatch"
+            android:textColor="#BBBBBB"
+            android:textSize="@dimen/dimen_23sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/watch_manaer_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:background="#ffffff"
+        android:divider="#e3e3e3"
+        android:dividerHeight="@dimen/dimen_1sp" />
+
+</LinearLayout>

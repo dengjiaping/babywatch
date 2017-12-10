@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#FF4F03"
+            android:src="@drawable/btn_back_bg" />
+ <RelativeLayout
+            android:id="@+id/rel_select_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FF4F03" >
+        <TextView
+           android:id="@+id/text_select_baby"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#E8E8E8"
+            android:text="@string/savemode"
+            android:textSize="@dimen/dimen_20sp" />
+<!--         <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_select_baby"
+                android:src="@drawable/drop_down" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 定位间隔 -->
+
+    <LinearLayout
+         android:id="@+id/rel_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_locationinterval"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/text_locationinterval"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="@string/locatedinterval"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_19sp" />
+
+          
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_2minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_14dp"
+                android:button="@drawable/radio_btn_img"
+                
+                android:text="@string/towminute"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/dimen_19sp" 
+                />
+
+            <RadioButton
+                 android:id="@+id/radio_10minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:button="@drawable/radio_btn_img"
+               
+                android:text="@string/tenminute"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/dimen_19sp" 
+                />
+
+            <RadioButton
+                 android:id="@+id/radio_30minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:button="@drawable/radio_btn_img"
+              
+                android:text="@string/thrityminute"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/dimen_19sp" 
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <!--
+//
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/text_intercominterval"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="腕表对讲时间间隔"
+                android:textColor="#818181"
+                android:textSize="@dimen/dimen_22sp" />
+
+            <ImageButton
+                android:id="@+id/btn_intercominterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="#ffffff"
+                android:src="@drawable/aset_b_no" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_14dp"
+                android:button="@drawable/radio_btn_img"
+                android:paddingLeft="@dimen/dimen_11dp"
+                android:text="2分钟"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/dimen_19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:button="@drawable/radio_btn_img"
+                android:paddingLeft="@dimen/dimen_11dp"
+                android:text="10分钟"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/dimen_19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:button="@drawable/radio_btn_img"
+                android:paddingLeft="@dimen/dimen_11dp"
+                android:text="30分钟"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/dimen_19sp" />
+        </RadioGroup>
+    </LinearLayout>
+    -->
+
+</LinearLayout>

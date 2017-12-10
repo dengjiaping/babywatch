@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_6dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatfragment_tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 聊天内容及其背景 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/chatfragment_iv_user_avatar"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/chatfragment_rl_chat_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chatfragment_iv_user_avatar" >
+
+            <ImageView
+                android:id="@+id/chatfragment_iv_chatcontent_tail"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/chatfragment_others_voice_background_tail" />
+
+            <ImageView
+                android:id="@+id/chatfragment_iv_chatcontent_middle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_alignBottom="@id/chatfragment_iv_chatcontent_tail"
+                android:layout_alignTop="@id/chatfragment_iv_chatcontent_tail"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/chatfragment_iv_chatcontent_tail"
+                android:background="#DADADA" />
+
+            <ImageView
+                android:id="@+id/chatfragment_iv_chatcontent_head"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/chatfragment_iv_chatcontent_middle"
+                android:scaleType="fitXY"
+                android:src="@drawable/chatfragment_others_voice_background_head" />
+
+            <TextView
+                android:id="@+id/chatfragment_iv_void_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/chatfragment_iv_chatcontent_head"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:text="1&quot;"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <ImageView
+                android:id="@+id/chatfragment_iv_audio_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/chatfragment_iv_chatcontent_tail"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:background="@drawable/chatfragment_others_voice_icon" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_chat_item_send_status"
+            android:layout_width="@dimen/dimen_15dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toRightOf="@id/chatfragment_rl_chat_bubble"
+            android:src="@drawable/gantanghao"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

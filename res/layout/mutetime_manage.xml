@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+    <!-- 顶部操作栏 -->
+
+    <RelativeLayout
+          android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="#FF4F03" >
+
+        <ImageButton
+            android:id="@+id/mute_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#FF4F03"
+            android:src="@drawable/btn_back_bg" />
+ <RelativeLayout
+            android:id="@+id/rel_select_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FF4F03" >
+        <TextView
+             android:id="@+id/text_select_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#E8E8E8"
+            android:text="@string/slicenatimebucket"
+            android:textSize="@dimen/dimen_20sp" />
+       <!--   <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_select_baby"
+                android:src="@drawable/drop_down" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 时间段名字和按钮 -->
+<LinearLayout 
+    android:id="@+id/rel_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/layout_mutetime_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/text_mutetime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_47dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="@string/timebacuke1"
+            android:textColor="#525252"
+            android:textSize="@dimen/dimen_20dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_mutetime_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="#ffffff"
+            android:button="@drawable/mutetime_manage_checkbox_btn_img" />
+    </RelativeLayout>
+    <!-- 具体静音的时间数据 -->
+
+
+    <!-- 分隔线 -->
+
+    <LinearLayout
+        android:id="@+id/mutetime_data_separate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="#d7d7d7"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mutetime_data_timedata_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/mutetime_manage_data_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:textColor="#ff4f03"
+            android:textSize="@dimen/dimen_17sp" />
+
+        <TextView
+            android:id="@+id/mutetime_manage_week_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#bababa"
+            android:textSize="@dimen/dimen_15sp" />
+
+ <!--        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jiantou" /> -->
+    </LinearLayout>
+
+    <!-- 时间段名字和按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_mutetime_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/text_mutetime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_47dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="@string/timebucket2"
+            android:textColor="#525252"
+            android:textSize="@dimen/dimen_20dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_mutetime_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="#ffffff"
+            android:button="@drawable/mutetime_manage_checkbox_btn_img" />
+    </RelativeLayout>
+    <!-- 具体静音的时间数据 -->
+
+
+    <!-- 分隔线 -->
+
+    <LinearLayout
+        android:id="@+id/mutetime_data_separate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="#d7d7d7"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/mutetime_data_timedata_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <TextView
+           android:id="@+id/mutetime_manage_data_time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:text=""
+            android:textColor="#ff4f03"
+            android:textSize="@dimen/dimen_17sp" />
+
+        <TextView
+              android:id="@+id/mutetime_manage_week_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textColor="#bababa"
+            android:textSize="@dimen/dimen_15sp" />
+
+<!--         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jiantou" /> -->
+    </LinearLayout>
+
+    <!-- 时间段名字和按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_mutetime_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/text_mutetime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_47dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="@string/timebucket3"
+            android:textColor="#525252"
+            android:textSize="@dimen/dimen_20dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_mutetime_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="#ffffff"
+            android:button="@drawable/mutetime_manage_checkbox_btn_img" />
+    </RelativeLayout>
+    <!-- 具体静音的时间数据 -->
+
+
+    <!-- 分隔线 -->
+
+    <LinearLayout
+        android:id="@+id/mutetime_data_separate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="#d7d7d7"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+       android:id="@+id/mutetime_data_timedata_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47dp"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <TextView
+           android:id="@+id/mutetime_manage_data_time_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:text=""
+            android:textColor="#ff4f03"
+            android:textSize="@dimen/dimen_17sp" />
+
+        <TextView
+              android:id="@+id/mutetime_manage_week_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textColor="#bababa"
+            android:textSize="@dimen/dimen_15sp" />
+
+<!--         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jiantou" /> -->
+    </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
